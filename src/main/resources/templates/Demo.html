@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    {{message}}
+    <button v-on:click="fun1('修改')">触发点击事件</button>
+</div>
+
+<script>
+    new Vue({
+        el:'#app',//接管的app
+        data:{
+            message:"hello vue"//数据
+        },
+
+        methods:{
+            fun1:function (msg){
+                alert(1);
+                this.message = msg;
+            }
+        }
+    })
+</script>
+</body>
+</html>

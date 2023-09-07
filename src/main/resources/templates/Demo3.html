@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <font v-bind:color="y1">sssss</font>
+</div>
+
+<script>
+  new Vue({
+
+    el:"#app",
+    data:{
+      y1:"red",
+      y2:"blue"
+    }
+  })
+</script>
+</body>
+</html>

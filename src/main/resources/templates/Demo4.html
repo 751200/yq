@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+
+  <ul>
+
+  </ul>
+
+  <table >
+    <th>序号</th>
+    <th>id</th>
+    <th>姓名</th>
+    <th>性别</th>
+
+    <tr v-for="(value,key) in persons">
+
+      <td>{{key}}</td>
+      <td>{{value.id}}</td>
+      <td>{{value.name}}</td>
+      <td>{{value.gender}}</td>
+    </tr>
+  </table>
+</div>
+
+<script>
+  new Vue({
+
+    el:"#app",
+    data:{
+        person:{//对象
+          userid:11,
+          username:"v",
+          gender:"femla"
+        },
+
+        persons:[
+          {
+            id:1,
+            name:"xiao",
+            gender:"male"
+          },{
+            id:2,
+            name:"ap",
+            gender:"female"
+          },{
+            id:3,
+            name:"nuo",
+            gender:"holicoper"
+          },
+        ]
+    }
+  })
+</script>
+</body>
+</html>
