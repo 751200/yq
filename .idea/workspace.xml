@@ -4,41 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa0a63f7-baab-4ad8-9b5a-4914d73a173b" name="Changes" comment="day03_基础环境">
-      <change afterPath="$PROJECT_DIR$/_03_wiki/http/test.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/EbookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/CategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/ContentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/DocMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/EbookMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/EbookSnapshotMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/Content.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/Doc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/Ebook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/EbookSnapshot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/ContentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/DocService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/EbookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/EbookSnapshotService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/ContentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/DocServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/EbookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/EbookSnapshotServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/resources/mapper/ContentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/resources/mapper/DocMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/resources/mapper/EbookMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/resources/mapper/EbookSnapshotMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
+    <list default="true" id="fa0a63f7-baab-4ad8-9b5a-4914d73a173b" name="Changes" comment="day03_持久化完成">
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/CommonResp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/EbookReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/EbookResp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/CopyUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/EbookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/EbookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/trace.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/trace.log" afterDir="false" />
     </list>
@@ -106,12 +79,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/_myProjects/yq/_03_wiki/src/main/resources",
+    "last_opened_file_path": "D:/_myProjects/yq/_03_wiki/src/main/java/com/gec/_03_wiki/utils",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "settings.editor.selected.configurable": "project.propCompiler",
     "spring.configuration.checksum": "0fea3f4341ca81c50f8be949585dd9f5"
   },
   "keyToStringList": {
@@ -122,12 +95,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\_myProjects\yq\_03_wiki\src\main\java\com\gec\_03_wiki\utils" />
+      <recent name="D:\_myProjects\yq\_03_wiki\src\main\java\com\gec\_03_wiki\pojo" />
       <recent name="D:\_myProjects\yq\_03_wiki\src\main\resources" />
       <recent name="D:\_myProjects\yq\_03_Wiki\src\main\resources" />
       <recent name="D:\_myProjects\yq\_02_mybatisPlus\src\main\resources\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.Test | #1">
+  <component name="RunManager" selected="Spring Boot.Application (2)">
     <configuration name="Test | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/_03_Wiki/http/Test.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -214,7 +189,7 @@
       <workItem from="1694095678146" duration="615000" />
       <workItem from="1694133076578" duration="2355000" />
       <workItem from="1694135509167" duration="1767000" />
-      <workItem from="1694137292607" duration="1035000" />
+      <workItem from="1694137292607" duration="2057000" />
     </task>
     <task id="LOCAL-00001" summary="day01">
       <created>1693961437379</created>
@@ -251,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694137315803</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="day03_持久化完成">
+      <created>1694138419553</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694138419553</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +255,8 @@
     <MESSAGE value="day01" />
     <MESSAGE value="day02" />
     <MESSAGE value="day03_基础环境" />
-    <option name="LAST_COMMIT_MESSAGE" value="day03_基础环境" />
+    <MESSAGE value="day03_持久化完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="day03_持久化完成" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
