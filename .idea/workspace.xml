@@ -5,7 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa0a63f7-baab-4ad8-9b5a-4914d73a173b" name="Changes" comment="day03_基础环境">
+      <change afterPath="$PROJECT_DIR$/_03_wiki/http/test.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/EbookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/ContentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/DocMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/EbookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/EbookSnapshotMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/Content.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/Doc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/Ebook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/EbookSnapshot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/ContentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/DocService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/EbookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/EbookSnapshotService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/ContentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/DocServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/EbookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/EbookSnapshotServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/resources/mapper/CategoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/resources/mapper/ContentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/resources/mapper/DocMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/resources/mapper/EbookMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/resources/mapper/EbookSnapshotMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/trace.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/trace.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +59,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -54,33 +93,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/_myProjects/yq/_03_wiki/src/main/resources&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;cdab34e89808059a119d7f5f51c4ae4d&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/_myProjects/yq/_03_wiki/src/main/resources",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "spring.configuration.checksum": "0fea3f4341ca81c50f8be949585dd9f5"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\_myProjects\yq\_03_wiki\src\main\resources" />
@@ -88,7 +127,7 @@
       <recent name="D:\_myProjects\yq\_02_mybatisPlus\src\main\resources\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application (2)">
+  <component name="RunManager" selected="HTTP Request.Test | #1">
     <configuration name="Test | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/_03_Wiki/http/Test.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -146,9 +185,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.Test | #1" />
         <item itemvalue="Spring Boot.Application (2)" />
         <item itemvalue="Spring Boot.Application (1)" />
-        <item itemvalue="HTTP Request.Test | #1" />
         <item itemvalue="Spring Boot.WikiApplication" />
         <item itemvalue="Spring Boot.Application" />
       </list>
@@ -175,6 +214,7 @@
       <workItem from="1694095678146" duration="615000" />
       <workItem from="1694133076578" duration="2355000" />
       <workItem from="1694135509167" duration="1767000" />
+      <workItem from="1694137292607" duration="1035000" />
     </task>
     <task id="LOCAL-00001" summary="day01">
       <created>1693961437379</created>
@@ -204,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694136781323</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="day03_基础环境">
+      <created>1694137315803</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694137315803</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
