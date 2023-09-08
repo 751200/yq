@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/111" />
     <file type="web" url="file://$PROJECT_DIR$/_02_mybatisPlus" />
+    <file type="web" url="file://$PROJECT_DIR$/_03_Wiki" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -9,6 +11,8 @@
         <option value="$PROJECT_DIR$/_01_startSpringboot/pom.xml" />
         <option value="$PROJECT_DIR$/_02_mybatisPlus/pom.xml" />
         <option value="$PROJECT_DIR$/_01_startBoot/pom.xml" />
+        <option value="$PROJECT_DIR$/wiki/pom.xml" />
+        <option value="$PROJECT_DIR$/_03_wiki/pom.xml" />
       </list>
     </option>
   </component>
