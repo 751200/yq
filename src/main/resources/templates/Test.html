@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="vue.js"></script>
+  <script src="axios.js"></script>
+</head>
+<body>
+<div id="app">
+    <table border="">
+        <th>id</th>
+        <th>姓名</th>
+        <th>年龄</th>
+
+        <tr v-for="(user,key) in userList">
+
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+        </tr>
+    </table>
+</div>
+
+
+<script>
+  new Vue({
+
+    el:"#app",
+      data:{
+        userList:[],
+      },
+
+    created(){
+        var _this = this;
+        axios.get("http://localhost:8080/userList").then(function (response) {
+            _this.userList=response.data;
+        // console.log(response.data);
+        })
+        axios.post("http://localhost:8080/user",{id:"1",name:"666",age:"12"}).then(function (response){
+
+        })
+    }//created
+  })
+</script>
+</body>
+</html>
