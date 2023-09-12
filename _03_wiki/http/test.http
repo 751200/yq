@@ -2,3 +2,8 @@ GET http://localhost:8080/ebookAll
 Accept: application/json
 
 ###
+
+GET http://localhost:8080/getebookListByPage?page=2&size=3
+Accept: application/json
+
+###

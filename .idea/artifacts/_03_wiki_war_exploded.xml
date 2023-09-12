@@ -38,7 +38,6 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.13.5" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:5.3.29" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.3.29" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.29" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.29" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.3.29" />
           <element id="library" level="project" name="Maven: com.mysql:mysql-connector-j:8.0.31" />
@@ -57,6 +56,12 @@
           <element id="library" level="project" name="Maven: com.alibaba:druid:1.2.8" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-devtools:2.7.15" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.7.15" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:2.0.32" />
+          <element id="library" level="project" name="Maven: com.alibaba.fastjson2:fastjson2-extension:2.0.32" />
+          <element id="library" level="project" name="Maven: com.alibaba.fastjson2:fastjson2:2.0.32" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.7.15" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.29" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.7" />
         </element>
       </element>
       <element id="directory" name="META-INF">

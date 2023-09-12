@@ -1,5 +1,9 @@
 package com.gec._03_wiki.filter;
 
+/*
+登录过滤器
+
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -31,3 +35,4 @@ public class LogFilter implements Filter {
         LOG.info("------------- LogFilter 结束 耗时：{} ms -------------", System.currentTimeMillis() - startTime);
     }
 }
+*/

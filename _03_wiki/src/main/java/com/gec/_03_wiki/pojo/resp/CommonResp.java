@@ -1,4 +1,4 @@
-package com.gec._03_wiki.pojo;
+package com.gec._03_wiki.pojo.resp;
 
 public class CommonResp<T> {
 
