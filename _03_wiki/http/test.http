@@ -7,3 +7,5 @@ GET http://localhost:8080/getebookListByPage?page=2&size=3
 Accept: application/json
 
 ###
+
+GET http://localhost:8080/ebook/remove?id=356627487381393400

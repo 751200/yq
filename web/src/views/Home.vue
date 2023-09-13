@@ -111,7 +111,7 @@ export default defineComponent({
     const  ebooks = ref();
     const  ebooks1 =reactive({books:[]});
     onMounted(()=>{
-      axios.get("/getebookListByPage",{
+      axios.get("/ebook/getebookListByPage",{
         params:{
           page:1,
           size:1000

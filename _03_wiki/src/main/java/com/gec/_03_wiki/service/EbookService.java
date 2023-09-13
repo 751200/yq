@@ -2,6 +2,7 @@ package com.gec._03_wiki.service;
 
 import com.gec._03_wiki.pojo.Ebook;
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
 * @author 751200
@@ -10,4 +11,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface EbookService extends IService<Ebook> {
 
+    String uploadImage(MultipartFile file, String s);
 }

@@ -3,25 +3,32 @@ package com.gec._03_wiki.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.ObjectUtils;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.gec._03_wiki.pojo.Doc;
 import com.gec._03_wiki.pojo.req.EbookQueryReq;
 import com.gec._03_wiki.pojo.resp.CommonResp;
 import com.gec._03_wiki.pojo.Ebook;
 import com.gec._03_wiki.pojo.resp.EbookQueryResp;
 import com.gec._03_wiki.pojo.resp.PageResp;
+import com.gec._03_wiki.service.DocService;
 import com.gec._03_wiki.service.EbookService;
 import com.gec._03_wiki.utils.CopyUtil;
+import com.gec._03_wiki.utils.SnowFlake;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
 @RestController
+@RequestMapping("/ebook")
 public class EbookController {
 
     @Autowired
     private EbookService ebookService;
+    @Autowired
+    private DocService docService;
 
 //    @GetMapping("/ebookAll")
 //    public CommonResp getAll(){
@@ -92,9 +99,39 @@ public class EbookController {
     public CommonResp save(@RequestBody Ebook req){
 //        Ebook ebook = CopyUtil.copy(req, Ebook.class);
         //会根据是否有id判断   修改（有id）  新增（无id）
-        ebookService.saveOrUpdate(req);
+//        ebookService.saveOrUpdate(req);
+
+        if(ObjectUtils.isEmpty(req.getId())){
+            SnowFlake snowFlake = new SnowFlake();
+            req.setId(snowFlake.nextId());
+            ebookService.saveOrUpdate(req);
+        }else{
+            Doc doc = new Doc();
+            doc.setEbookId(req.getId());
+            doc.setName(req.getName());
+            doc.setParent(0L);
+            docService.saveOrUpdate(doc);
+            ebookService.saveOrUpdate(req);
+        }
 
         CommonResp resp = new CommonResp<>();
+        return resp;
+    }
+    @GetMapping("/remove")
+    public CommonResp remove(int id){
+
+        ebookService.removeById(id);
+        CommonResp<Object> resp = new CommonResp<>();
+        return resp;
+    }
+
+    @PostMapping("/uploadImage")
+    public CommonResp uploadImage(@RequestParam(value = "file",required = false)MultipartFile file){
+        String path = System.getProperty("user.dir");
+        System.out.println("path ========"+ path + "\\web\\public\\image\\");
+        String imageName = ebookService.uploadImage(file,path + "\\web\\public\\image\\");
+        CommonResp<Object> resp = new CommonResp<>();
+        resp.setContent(imageName);
         return resp;
     }
 }

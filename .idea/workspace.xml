@@ -4,41 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa0a63f7-baab-4ad8-9b5a-4914d73a173b" name="Changes" comment="day05前后端交互">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson2_fastjson2_2_0_32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson2_fastjson2_extension_2_0_32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_2_0_32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_7_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/aspect/LogAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/config/PageConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/req/EbookQueryReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/req/PageReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/resp/PageResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/RequestContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/SnowFlake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/public/image/cover1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/public/image/cover2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/views/admin/admin-ebook.vue" afterDir="false" />
+    <list default="true" id="fa0a63f7-baab-4ad8-9b5a-4914d73a173b" name="Changes" comment="day06前后端交互">
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/exception/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/exception/BusinessExceptionCode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/_03_Wiki_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/_03_Wiki_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/_03_wiki_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_03_wiki/http/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/http/test.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/filter/LogFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/filter/LogFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/filter/SpringMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/config/SpringMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/interceptor/LogInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/interceptor/LogInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/CommonResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/resp/CommonResp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/EbookReq.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/EbookResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/resp/EbookQueryResp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/controller/EbookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/EbookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/EbookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/EbookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/EbookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/EbookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/EbookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/EbookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/SnowFlake.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/SnowFlake.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/trace.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/trace.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/components/the-header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/components/the-header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/router/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/admin/admin-ebook.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/admin/admin-ebook.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +33,7 @@
         <option value="HTML File" />
         <option value="Vue Single File Component" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -141,11 +121,11 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application (2)">
-    <configuration name="Test | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/_03_Wiki/http/Test.http" requestIdentifier="#1" runType="Run single request">
+  <component name="RunManager" selected="npm.serve-dev">
+    <configuration name="test | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/_03_wiki/http/test.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="test | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/_03_wiki/http/test.http" index="2" requestIdentifier="#2" runType="Run single request">
+    <configuration name="test | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/_03_wiki/http/test.http" index="3" requestIdentifier="#3" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Application (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -181,13 +161,20 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="HTTP Request.test | #2" />
+      <item itemvalue="HTTP Request.test | #3" />
+      <item itemvalue="npm.serve" />
+      <item itemvalue="npm.serve-dev" />
+      <item itemvalue="Spring Boot.Application (2)" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Application (2)" />
-        <item itemvalue="HTTP Request.test | #2" />
         <item itemvalue="npm.serve-dev" />
+        <item itemvalue="Spring Boot.Application (2)" />
+        <item itemvalue="HTTP Request.test | #3" />
+        <item itemvalue="HTTP Request.test | #2" />
         <item itemvalue="npm.serve" />
-        <item itemvalue="HTTP Request.Test | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -222,6 +209,8 @@
       <workItem from="1694333239725" duration="335000" />
       <workItem from="1694341440636" duration="622000" />
       <workItem from="1694392475166" duration="18185000" />
+      <workItem from="1694479556258" duration="18329000" />
+      <workItem from="1694565444902" duration="93000" />
     </task>
     <task id="LOCAL-00001" summary="day01">
       <created>1693961437379</created>
@@ -286,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694392656113</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="day06前后端交互">
+      <created>1694479671121</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694479671121</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +308,8 @@
     <MESSAGE value="day03_持久化配置完成" />
     <MESSAGE value="day04_前端准备" />
     <MESSAGE value="day05前后端交互" />
-    <option name="LAST_COMMIT_MESSAGE" value="day05前后端交互" />
+    <MESSAGE value="day06前后端交互" />
+    <option name="LAST_COMMIT_MESSAGE" value="day06前后端交互" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
