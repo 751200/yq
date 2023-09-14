@@ -3,9 +3,9 @@ Accept: application/json
 
 ###
 
-GET http://localhost:8080/getebookListByPage?page=2&size=3
+GET http://localhost:8080/ebook/getEbookListByPage?page=1&size=3&category2Id=213
 Accept: application/json
 
 ###
 
-GET http://localhost:8080/ebook/remove?id=356627487381393400
+GET http://localhost:8080/category/allList

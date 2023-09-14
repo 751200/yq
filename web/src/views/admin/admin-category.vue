@@ -6,22 +6,9 @@
         :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
     >
       <p>
-        <a-form layout="inline" :model="param">
-          <a-form-item>
-            <a-input v-model:value="param.name" placeholder="名称">
-            </a-input>
-          </a-form-item>
-          <a-form-item>
-            <a-button type="primary" @click="handleQuery({page: 1, size: pagination.pageSize})">
-              查询
-            </a-button>
-          </a-form-item>
-          <a-form-item>
-            <a-button type="primary" @click="add()">
-              新增
-            </a-button>
-          </a-form-item>
-        </a-form>
+        <a-button type="primary" @click="add()" size="lage">
+          添加
+        </a-button>
       </p>
       <div class="about">
         <h1>海洋生物管理</h1>
@@ -29,16 +16,13 @@
       <a-table
           :columns="columns"
           :row-key="record => record.id"
-          :data-source="ebooks"
-          :pagination="pagination"
+          :data-source="level1"
+          :pagination="false"
           :loading="loading"
           @change="handleTableChange"
       >
         <template #cover="{ text: cover }">
           <img v-if="cover" :src="cover" alt="avatar" style="width: 20%;height: 20%"/>
-        </template>
-        <template v-slot:category="{text,record}">
-          <span>{{getCategoryName(record.category1Id)}}/{{getCategoryName(record.category2Id)}}</span>
         </template>
         <template v-slot:action="{ text, record }">
           <a-space size="small">
@@ -50,7 +34,7 @@
               ok-text="是"
               cancel-text="否"
               @confirm="handleDelete(record.id)">
-              <a-button type="primary">
+              <a-button type="danger">
               删除
               </a-button>
             </a-popconfirm>
@@ -63,48 +47,34 @@
   </a-layout>
 
   <a-modal
-    title="海洋生物表单"
+    title="分类表单"
     v-model:visible="modalVisible"
     :confirm-loading="modalLoading"
     @ok="handleModalOk">
-    <a-form :model="ebook" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
-
-      <a-form-item label="封面">
-        <!--          上传封面-->
-        <div class="clearfix">
-          <a-upload
-              v-model:file-list="fileList"
-              list-type="picture-card"
-              :customRequest="customRequest"
-          >
-            <div v-if="fileList.length < imgNum">
-              <plus-outlined />
-              <div style="margin-top: 8px">Upload</div>
-            </div>
-          </a-upload>
-          <a-modal :visible="previewVisible" :title="previewTitle" :footer="null" @cancel="handleCancel">
-            <img alt="example" style="width: 100%" :src="previewImage" />
-          </a-modal>
-        </div>
-      </a-form-item>
+    <a-form :model="category" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
 
       <a-form-item label="名称">
-        <a-input v-model:value="ebook.name" />
+        <a-input v-model:value="category.name" />
       </a-form-item>
-<!--      <a-form-item label="分类一">-->
-<!--        <a-input v-model:value="ebook.category1Id" />-->
-<!--      </a-form-item>-->
-<!--      <a-form-item label="分类二">-->
-<!--        <a-input v-model:value="ebook.category2Id" />-->
-<!--      </a-form-item>-->
-      <a-form-item label="分类">
-        <a-cascader
-            v-model:value="categoryIds"
-            :field-names="{label:'name',value:'id' ,children:'children'}"
-            :options="level1"/>
+      <a-form-item label="父分类">
+<!--        <a-input v-model:value="category.parent" />-->
+        <a-select
+            v-model:value="category.parent"
+            ref="select"
+        >
+          <a-select-option value="0">
+            无
+          </a-select-option>
+          <a-select-option v-for="c in level1" :key="c.id" :value="c.id" :disabled="category.id ===c.id">
+            {{c.name}}
+          </a-select-option>
+        </a-select>
+      </a-form-item>
+      <a-form-item label="顺序">
+        <a-input v-model:value="category.sort" />
       </a-form-item>
       <a-form-item label="描述">
-        <a-input v-model:value="ebook.description" type="textarea" />
+        <a-input v-model:value="category.description" type="textarea" />
       </a-form-item>
     </a-form>
   </a-modal>
@@ -117,98 +87,68 @@ import {UploadOutlined} from "@ant-design/icons-vue";
 import {Tool} from "@/utils/tool";
 
 
-
-
 export default defineComponent({
-  name: 'Adminebook',
+  name: 'Admincategory',
   components: {
     UploadOutlined,
   },
   setup(){
-    const param = ref();
-    param.value={};
-
-
-    const ebooks = ref();
+    const categorys = ref();
     const pagination = ref({
       current: 1,
-      pageSize: 2,
+      pageSize: 5,
       total: 0
     });
     const loading = ref(false);
     const columns = [
       {
-        title: '封面',
-        dataIndex: 'cover',
-        slots: { customRender: 'cover' }
-      },
-      {
         title: '名称',
         dataIndex: 'name'
       },
       {
-        title: '分类',
-        slots:{ customRender:'category'} ,
-      },
-      // {
-      //   title: '分类二',
-      //   dataIndex: 'category2Id' ,
-      // },
-      {
-        title: '文档数',
-        dataIndex: 'docCount'
+        title: '父分类',
+        dataIndex: 'parent' ,
       },
       {
-        title: '阅读数',
-        dataIndex: 'viewCount'
-      },
-      {
-        title: '点赞数',
-        dataIndex: 'voteCount'
+        title: '顺序',
+        dataIndex: 'sort' ,
       },
       {
         title: 'Action',
         key: 'action',
-        slots: { customRender: 'action' }
-      }
+        slots:{customRender:'action'},
+      },
     ];
 
+    const level1 = ref();
     /*
     * 数据查询
     * */
     const  handleQuery = (params:any)=>{
       loading.value = true;
-      axios.get("/ebook/getEbookListByPage",{
-        params:{
-          page:params.page,
-          size:params.size,
-          name:param.value.name,
-        }
-
-      }).then((resp)=>{
+      axios.get("/category/allList").then((resp)=>{
         loading.value = false;
         const  data = resp.data;
-        if(data.success) {
-          ebooks.value = data.content.list;
+        if(data.success){
+          console.log(data.content);
+          console.log("原始数组");
 
-          //重置分页按钮
-          pagination.value.current = params.page;
-          pagination.value.total = data.content.total;
+          level1.value = [];
+          level1.value = Tool.array2Tree(data.content,0);
+          console.log("树形结构",level1);
         }else {
           message.error(data.message);
         }
-        });
+        // categorys.value = data.content;
+
+
+
+      });
     };
     /*
     * 表格点击页码时触发
     * */
-    const handleTableChange =(pagination:any)=>{
-      console.log("看看自带分页的参数都有些啥："+pagination);
-      handleQuery({
-        page:pagination.current,
-        size:pagination.pageSize
-      });
-    };
+
 
     function getBase64(file: File) {
       return new Promise((resolve, reject) => {
@@ -238,7 +178,7 @@ export default defineComponent({
       // 表单
       const form = new FormData();
       form.append("file",file.file); // 表单添加文件
-      axios.post("/ebook/uploadImage",form,{headers:{ 'Content-Type':'multipart/form-data' }})
+      axios.post("/category/uploadImage",form,{headers:{ 'Content-Type':'multipart/form-data' }})
           .then(res=>{
             if (res.data.success){
               // 调用组件的方法，设置为成功
@@ -257,17 +197,17 @@ export default defineComponent({
       previewTitle.value = '';
     };
     // -------- 表单 ---------
-    const ebook = ref();
-    const categoryIds = ref();
+    const category = ref();
+    // const categoryIds = ref();
     const modalVisible = ref(false);
     const modalLoading = ref(false);
     const handleModalOk = () => {
       modalLoading.value = true;
-      ebook.value.category1Id = categoryIds.value[0];
-      ebook.value.category2Id = categoryIds.value[1];
+      // category.value.category1Id = categoryIds.value[0];
+      // category.value.category2Id = categoryIds.value[1];
       console.log("fileName******",fileName);
-      ebook.value.cover = "/image/"+fileName;
-      axios.post("/ebook/save",ebook.value).then((resp)=>{
+      category.value.cover = "/image/"+fileName;
+      axios.post("/category/save",category.value).then((resp)=>{
         const data = resp.data
         if (data.success){
           modalVisible.value=false;
@@ -277,8 +217,6 @@ export default defineComponent({
             page:pagination.value.current,
             size:pagination.value.pageSize,
           })
-        }else {
-          message.error((data.message));
         }
       })
       setTimeout(() => {
@@ -288,19 +226,18 @@ export default defineComponent({
     };
     //编辑
     const edit = (record:any)=>{
-      ebook.value=Tool.copy(record);
+      category.value=record;
       modalVisible.value =true;
-      categoryIds.value = [ebook.value.category1Id,ebook.value.category2Id]
     };
     //编辑
     const add = ()=>{
-      ebook.value={};
+      category.value={};
       modalVisible.value =true;
     };
 
     //删除
     const handleDelete = (id:number)=>{
-      axios.get("/ebook/remove",{params:{id:id}}).then((resp)=>{
+      axios.get("/category/remove",{params:{id:id}}).then((resp)=>{
         if (resp.data.success){
           handleQuery({
             page:pagination.value.current,
@@ -310,73 +247,30 @@ export default defineComponent({
       })
     }
 
-    const level1 = ref();
-    let categorys:any;
-    /*
-    * 数据查询
-    * */
-    const  handleQueryCategory = ()=>{
-      loading.value = true;
-      axios.get("/category/allList").then((resp)=>{
-        loading.value = false;
-        const  data = resp.data;
-        categorys = data.content;
-
-        if(data.success){
-          console.log(data.content);
-          console.log("原始数组");
-
-          level1.value = [];
-          level1.value = Tool.array2Tree(data.content,0);
-          console.log("树形结构",level1);
-          handleQuery({
-            page:1,
-            size:pagination.value.pageSize
-          });
-        }else {
-          message.error(data.message);
-        }
-        // categorys.value = data.content;
-
-
-
-      });
-    };
-    const getCategoryName = (cid:number)=>{
-      let result = "";
-      categorys.forEach((item:any)=>{
-        if (item.id === cid){
-          result = item.name;
-        }
-
-      });
-      return result;
-    }
-
 
 
     onMounted(()=>{
-      handleQueryCategory();
-
-
+      handleQuery({
+        page:1,
+        size:pagination.value.pageSize
+      });
 
 
     })
 
 
     return {
-      ebooks,
+      categorys,
       pagination,
       columns,
       loading,
-      handleTableChange,
-
+      level1,
       edit,
       modalVisible,
       modalLoading,
       handleModalOk,
 
-      ebook,
+      category,
       add,
       handleDelete,
       imgNum,
@@ -386,14 +280,6 @@ export default defineComponent({
       handleCancel,
       previewTitle,
       customRequest,
-
-      categoryIds,
-      level1,
-      getCategoryName,
-      categorys,
-
-      param,
-      handleQuery,
     }
   }
 });

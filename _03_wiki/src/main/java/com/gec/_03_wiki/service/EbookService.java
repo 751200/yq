@@ -2,6 +2,9 @@ package com.gec._03_wiki.service;
 
 import com.gec._03_wiki.pojo.Ebook;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.gec._03_wiki.pojo.req.EbookQueryReq;
+import com.gec._03_wiki.pojo.resp.EbookQueryResp;
+import com.gec._03_wiki.pojo.resp.PageResp;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
@@ -12,4 +15,6 @@ import org.springframework.web.multipart.MultipartFile;
 public interface EbookService extends IService<Ebook> {
 
     String uploadImage(MultipartFile file, String s);
+
+    PageResp<EbookQueryResp> getEbookListByPage(EbookQueryReq EbookQueryReq);
 }

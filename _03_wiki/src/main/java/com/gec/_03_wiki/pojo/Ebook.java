@@ -7,6 +7,8 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import lombok.Data;
 
+import javax.validation.constraints.NotNull;
+
 /**
  * 电子书
  * @TableName ebook
@@ -24,6 +26,7 @@ public class Ebook implements Serializable {
      * 名称
      */
     @TableField(value = "name")
+    @NotNull(message = "【名称】不能为空")
     private String name;
 
     /**

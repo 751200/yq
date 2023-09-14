@@ -38,6 +38,4 @@ public class Category implements Serializable {
     @TableField(value = "sort")
     private Integer sort;
 
-    @TableField(exist = false)
-    private static final long serialVersionUID = 1L;
 }
