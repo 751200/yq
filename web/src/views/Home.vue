@@ -12,6 +12,7 @@
               mode="inline"
               :style="{ height: '100%', borderRight: 0 }"
               @click="handleclick"
+              :defaultSelectedKeys="['welcome']"
           >
             <a-menu-item key="welcome">
               <MailOutlined />
@@ -46,7 +47,9 @@
 
                 <a-list-item-meta :description="item.description">
                   <template #title>
-                    <a :href="item.href">{{ item.name }}</a>
+                    <router-link :to="'/doc?ebookId='+item.id">
+                      {{item.name}}
+                    </router-link>
                   </template>
                   <template #avatar><a-avatar :src="item.cover" />
                   </template>

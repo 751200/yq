@@ -3,9 +3,10 @@ Accept: application/json
 
 ###
 
-GET http://localhost:8080/ebook/getEbookListByPage?page=1&size=3&category2Id=213
+GET http://localhost:8080/ebook/getEbookListByPage?page=1&size=3
 Accept: application/json
 
 ###
 
-GET http://localhost:8080/category/allList
+GET http://localhost:8080/doc/allList?ebookId=1
+

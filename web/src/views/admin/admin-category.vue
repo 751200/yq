@@ -5,11 +5,22 @@
     <a-layout-content
         :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
     >
-      <p>
-        <a-button type="primary" @click="add()" size="lage">
-          添加
-        </a-button>
-      </p>
+      <a-form layout="inline" :model="param">
+        <a-form-item>
+          <a-input v-model:value="param.name" placeholder="名称">
+          </a-input>
+        </a-form-item>
+        <a-form-item>
+          <a-button type="primary" @click="handleQuery({page: 1, size: pagination.pageSize})">
+            查询
+          </a-button>
+        </a-form-item>
+        <a-form-item>
+          <a-button type="primary" @click="add()">
+            新增
+          </a-button>
+        </a-form-item>
+      </a-form>
       <div class="about">
         <h1>海洋生物管理</h1>
       </div>
@@ -93,6 +104,8 @@ export default defineComponent({
     UploadOutlined,
   },
   setup(){
+    const param = ref();
+    param.value={};
     const categorys = ref();
     const pagination = ref({
       current: 1,
@@ -126,7 +139,12 @@ export default defineComponent({
     * */
     const  handleQuery = (params:any)=>{
       loading.value = true;
-      axios.get("/category/allList").then((resp)=>{
+      level1.value=[];
+      axios.get("/category/allList",{params:{
+          name:param.value.name,
+          page:params.page,
+          size:params.size,
+        }}).then((resp)=>{
         loading.value = false;
         const  data = resp.data;
         if(data.success){
@@ -249,6 +267,7 @@ export default defineComponent({
 
 
 
+
     onMounted(()=>{
       handleQuery({
         page:1,
@@ -280,6 +299,8 @@ export default defineComponent({
       handleCancel,
       previewTitle,
       customRequest,
+      param,
+      handleQuery,
     }
   }
 });
