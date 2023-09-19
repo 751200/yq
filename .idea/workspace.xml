@@ -4,26 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa0a63f7-baab-4ad8-9b5a-4914d73a173b" name="Changes" comment="day08分类">
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/DocController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/req/ContentQueryReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/req/ContentSaveReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/req/DocQueryReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/req/DocSaveReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/resp/ContentQueryResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/resp/DocQueryResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/views/admin/admin-doc.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/views/doc.vue" afterDir="false" />
+    <list default="true" id="fa0a63f7-baab-4ad8-9b5a-4914d73a173b" name="Changes" comment="day08文档">
+      <change afterPath="$PROJECT_DIR$/_03_wiki/log/error.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/log/trace.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/req/UserLoginReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/req/UserQueryReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/req/UserResetPasswordReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/req/UserSaveReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/resp/UserLoginResp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/resp/UserQueryResp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/LoginUserContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/test/java/com/gec/_03_wiki/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/public/js/md5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/public/js/session-storage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/views/admin/admin-user.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/_03_wiki_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/_03_wiki_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_03_wiki/http/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/http/test.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/DocService.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/DocService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/DocServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/DocServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/config/SpringMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/config/SpringMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/ControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/exception/ControllerExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/exception/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/components/the-footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/components/the-footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/components/the-header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/components/the-header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/router/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/views/admin/admin-category.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/admin/admin-category.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/views/admin/admin-ebook.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/admin/admin-ebook.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/store/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +55,9 @@
       <list>
         <option value="HTML File" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="package.json" />
         <option value="Vue Single File Component" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -89,43 +103,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/_myProjects/yq/web/src/views/admin&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;0fea3f4341ca81c50f8be949585dd9f5&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\_myProjects\\yq\\web\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/_myProjects/yq/_03_wiki/src/main/java/com/gec/_03_wiki/utils",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "spring.configuration.checksum": "0fea3f4341ca81c50f8be949585dd9f5",
+    "ts.external.directory.path": "D:\\_myProjects\\yq\\web\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\_myProjects\yq\_03_wiki\src\main\java\com\gec\_03_wiki\utils" />
+      <recent name="D:\_myProjects\yq\web\public\js" />
       <recent name="D:\_myProjects\yq\web\src\views\admin" />
       <recent name="D:\_myProjects\yq\_03_wiki\src\main\java\com\gec\_03_wiki\controller" />
       <recent name="D:\_myProjects\yq\web\src\utils" />
-      <recent name="D:\_myProjects\yq\_03_wiki\src\main\java\com\gec\_03_wiki\config" />
-      <recent name="D:\_myProjects\yq\_03_wiki\src\main\java\com\gec\_03_wiki\utils" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gec._03_wiki.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -135,12 +152,27 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="npm.serve-dev">
-    <configuration name="test | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/_03_wiki/http/test.http" index="2" requestIdentifier="#2" runType="Run single request">
+  <component name="RunManager" selected="Spring Boot.Application (2)">
+    <configuration name="test | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/_03_wiki/http/test.http" index="4" requestIdentifier="#4" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="test | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/_03_wiki/http/test.http" index="3" requestIdentifier="#3" runType="Run single request">
+    <configuration name="test | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/_03_wiki/http/test.http" index="5" requestIdentifier="#5" runType="Run single request">
       <method v="2" />
+    </configuration>
+    <configuration name="ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="_03_wiki" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gec._03_wiki.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gec._03_wiki" />
+      <option name="MAIN_CLASS_NAME" value="com.gec._03_wiki.ApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Application (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="_03_wiki" />
@@ -165,30 +197,20 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/web/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="serve" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="HTTP Request.test | #2" />
-      <item itemvalue="HTTP Request.test | #3" />
-      <item itemvalue="npm.serve" />
+      <item itemvalue="HTTP Request.test | #4" />
+      <item itemvalue="HTTP Request.test | #5" />
+      <item itemvalue="JUnit.ApplicationTests" />
       <item itemvalue="npm.serve-dev" />
       <item itemvalue="Spring Boot.Application (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.test | #5" />
         <item itemvalue="npm.serve-dev" />
         <item itemvalue="Spring Boot.Application (2)" />
-        <item itemvalue="HTTP Request.test | #3" />
-        <item itemvalue="HTTP Request.test | #2" />
-        <item itemvalue="npm.serve" />
+        <item itemvalue="HTTP Request.test | #4" />
+        <item itemvalue="JUnit.ApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -229,6 +251,8 @@
       <workItem from="1694652700181" duration="13465000" />
       <workItem from="1694737312263" duration="17154000" />
       <workItem from="1694825016147" duration="18105000" />
+      <workItem from="1695001644371" duration="3137000" />
+      <workItem from="1695088786918" duration="11546000" />
     </task>
     <task id="LOCAL-00001" summary="day01">
       <created>1693961437379</created>
@@ -314,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694655314661</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="day08文档">
+      <created>1695001770380</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1695001770380</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +374,8 @@
     <MESSAGE value="day06前后端交互" />
     <MESSAGE value="day07前后端交互" />
     <MESSAGE value="day08分类" />
-    <option name="LAST_COMMIT_MESSAGE" value="day08分类" />
+    <MESSAGE value="day08文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="day08文档" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
