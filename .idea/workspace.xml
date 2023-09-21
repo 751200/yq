@@ -4,40 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa0a63f7-baab-4ad8-9b5a-4914d73a173b" name="Changes" comment="day08文档">
-      <change afterPath="$PROJECT_DIR$/_03_wiki/log/error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/log/trace.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/req/UserLoginReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/req/UserQueryReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/req/UserResetPasswordReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/req/UserSaveReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/resp/UserLoginResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/resp/UserQueryResp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/LoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/LoginUserContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/test/java/com/gec/_03_wiki/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/public/js/md5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/public/js/session-storage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/views/admin/admin-user.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="fa0a63f7-baab-4ad8-9b5a-4914d73a173b" name="Changes" comment="day09登录校验">
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/config/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/job/DocJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/job/TestJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/WsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/websocket/WebSocketServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/_03_wiki_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/_03_wiki_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/http/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/http/test.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_03_wiki/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/config/SpringMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/config/SpringMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/ControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/exception/ControllerExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/exception/BusinessException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/DocController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/DocController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/DocMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/DocMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/DocService.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/DocService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/DocServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/DocServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/LoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/LoginUserContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/LoginUserContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/.env.dev" beforeDir="false" afterPath="$PROJECT_DIR$/web/.env.dev" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/components/the-footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/components/the-footer.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/components/the-header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/components/the-header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/router/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/admin/admin-user.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/admin/admin-user.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/views/doc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/doc.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,12 +107,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/_myProjects/yq/_03_wiki/src/main/java/com/gec/_03_wiki/utils",
+    "last_opened_file_path": "D:/_myProjects/yq/_03_wiki/src/main/java/com/gec/_03_wiki/websocket",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.import",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
     "spring.configuration.checksum": "0fea3f4341ca81c50f8be949585dd9f5",
     "ts.external.directory.path": "D:\\_myProjects\\yq\\web\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -135,11 +125,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\_myProjects\yq\_03_wiki\src\main\java\com\gec\_03_wiki\websocket" />
+      <recent name="D:\_myProjects\yq\_03_wiki\src\main\java\com\gec\_03_wiki\config" />
+      <recent name="D:\_myProjects\yq\_03_wiki\src\main\java\com\gec\_03_wiki\job" />
       <recent name="D:\_myProjects\yq\_03_wiki\src\main\java\com\gec\_03_wiki\utils" />
       <recent name="D:\_myProjects\yq\web\public\js" />
-      <recent name="D:\_myProjects\yq\web\src\views\admin" />
-      <recent name="D:\_myProjects\yq\_03_wiki\src\main\java\com\gec\_03_wiki\controller" />
-      <recent name="D:\_myProjects\yq\web\src\utils" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.gec._03_wiki.controller" />
@@ -206,9 +196,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.test | #5" />
         <item itemvalue="npm.serve-dev" />
         <item itemvalue="Spring Boot.Application (2)" />
+        <item itemvalue="HTTP Request.test | #5" />
         <item itemvalue="HTTP Request.test | #4" />
         <item itemvalue="JUnit.ApplicationTests" />
       </list>
@@ -252,7 +242,9 @@
       <workItem from="1694737312263" duration="17154000" />
       <workItem from="1694825016147" duration="18105000" />
       <workItem from="1695001644371" duration="3137000" />
-      <workItem from="1695088786918" duration="11546000" />
+      <workItem from="1695088786918" duration="14345000" />
+      <workItem from="1695172906619" duration="5911000" />
+      <workItem from="1695258524410" duration="6700000" />
     </task>
     <task id="LOCAL-00001" summary="day01">
       <created>1693961437379</created>
@@ -345,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695001770380</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="day08登录校验">
+      <created>1695104861325</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1695104861325</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,11 +353,41 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="3b7a3469-37f1-47fb-8f14-3b8f57ab4758">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="3b7a3469-37f1-47fb-8f14-3b8f57ab4758" value="TOOL_WINDOW" />
       </map>
     </option>
   </component>
@@ -375,7 +404,8 @@
     <MESSAGE value="day07前后端交互" />
     <MESSAGE value="day08分类" />
     <MESSAGE value="day08文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="day08文档" />
+    <MESSAGE value="day09登录校验" />
+    <option name="LAST_COMMIT_MESSAGE" value="day09登录校验" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

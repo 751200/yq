@@ -88,6 +88,9 @@ export default defineComponent({
     const login = () => {
       console.log("开始登录");
       loginModalLoading.value = true;
+
+      const reg = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,32}$/;
+      if(reg.test(loginUser.value.password)) {
       loginUser.value.password = hexMd5(loginUser.value.password + KEY);
       axios.post('/user/userLogin', loginUser.value).then((response) => {
         loginModalLoading.value = false;
@@ -102,6 +105,10 @@ export default defineComponent({
           loginModalLoading.value = false;
         }
       });
+      }else{
+        message.error("【密码】至少包含 数字1和英文，长度6-32");
+        loginModalLoading.value = false;
+      }
     };
     // 退出登录
     const logout = () => {

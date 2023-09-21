@@ -24,6 +24,7 @@ LoginInterceptor loginInterceptor;
                         "/category/allList",
                         "/ebook/getEbookListByPage",
                         "/doc/allList/**",
+                        "/doc/vote/**",
                         "/doc/findContentById/**"
                 );
     }

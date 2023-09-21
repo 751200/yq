@@ -1,8 +1,7 @@
 package com.gec._03_wiki.utils;
 
 import com.alibaba.fastjson.JSON;
-import com.gec.resp.UserLoginResp;
-import com.gec.utils.LoginUserContext;
+import com.gec._03_wiki.pojo.resp.UserLoginResp;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.redis.core.RedisTemplate;

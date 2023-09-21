@@ -18,4 +18,7 @@ public interface DocService extends IService<Doc> {
 
     List<DocQueryResp> allList(DocQueryReq req);
 
+    int increaseViewCount(int id);
+    int increaseVoteCount(int id);
+    int updateEbookInfo();
 }

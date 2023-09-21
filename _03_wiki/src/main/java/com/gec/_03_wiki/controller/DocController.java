@@ -46,6 +46,7 @@ public class DocController {
     public CommonResp findContentById(@PathVariable int id){
         Content content = contentService.getById(id);
 
+        docService.increaseViewCount(id);
         CommonResp<String> resp = new CommonResp<>();
         if (content!=null && content.getContent()!=null){
             resp.setContent(content.getContent());
@@ -73,5 +74,13 @@ public class DocController {
         CommonResp<Object> resp = new CommonResp<>();
         return resp;
     }
+
+    @GetMapping("/vote/{id}")
+    public CommonResp vote(@PathVariable int id){
+        docService.increaseVoteCount(id);
+        CommonResp<String> resp = new CommonResp<>();
+        return resp;
+    }
+
 
 }

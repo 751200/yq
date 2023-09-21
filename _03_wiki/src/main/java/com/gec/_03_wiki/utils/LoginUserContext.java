@@ -1,7 +1,7 @@
 package com.gec._03_wiki.utils;
 
 
-import com.gec.resp.UserLoginResp;
+import com.gec._03_wiki.pojo.resp.UserLoginResp;
 
 import java.io.Serializable;
 

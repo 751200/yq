@@ -191,7 +191,7 @@ export default defineComponent({
             });
           } else {
             message.error(data.message);
-
+            modalVisible.value = false;
           }
         });
       }else {//if(reg)
