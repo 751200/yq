@@ -9,6 +9,9 @@ spring:
     port: 6379
     host: 127.0.0.1
     password:
+  jackson:
+    time-zone: GMT+8
+
 server:
   port: 8080
 mybatis-plus:

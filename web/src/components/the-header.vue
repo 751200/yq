@@ -1,6 +1,6 @@
 <template>
   <a-layout-header class="header">
-    <div class="logo" />
+    <div class="logo" >海洋知识库</div>
     <a-menu
         v-model:selectedKeys="selectedKeys1"
         theme="dark"
@@ -138,3 +138,20 @@ export default defineComponent({
 
 
 </script>
+
+<style>
+.logo {
+  width: 120px;
+  height: 31px;
+  /*background: rgba(255, 255, 255, 0.2);*/
+  /*margin: 16px 28px 16px 0;*/
+  float: left;
+  color: white;
+  font-size: 18px;
+}
+.login-menu {
+  float: right;
+  color: white;
+  padding-left: 10px;
+}
+</style>

@@ -25,7 +25,8 @@ LoginInterceptor loginInterceptor;
                         "/ebook/getEbookListByPage",
                         "/doc/allList/**",
                         "/doc/vote/**",
-                        "/doc/findContentById/**"
+                        "/doc/findContentById/**",
+                        "/ebook-snapshot/getStatistic/**"
                 );
     }
 

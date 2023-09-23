@@ -4,29 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa0a63f7-baab-4ad8-9b5a-4914d73a173b" name="Changes" comment="day09登录校验">
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/config/WebSocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/job/DocJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/job/TestJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/WsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/RedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/websocket/WebSocketServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/_03_wiki_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/_03_wiki_war_exploded.xml" afterDir="false" />
+    <list default="true" id="fa0a63f7-baab-4ad8-9b5a-4914d73a173b" name="Changes" comment="day10文档信息">
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/EbookSnapshotController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/job/EbookSnapshotJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/pojo/StatisticResp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/public/js/echarts_5.0.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/components/the-welcome.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/http/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/http/test.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_03_wiki/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/config/SpringMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/config/SpringMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/DocController.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/controller/DocController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/DocMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/DocMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/DocService.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/DocService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/DocServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/DocServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/LoginInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/LoginUserContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/utils/LoginUserContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/.env.dev" beforeDir="false" afterPath="$PROJECT_DIR$/web/.env.dev" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/components/the-footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/components/the-footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/EbookSnapshotMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/mapper/EbookSnapshotMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/EbookSnapshotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/EbookSnapshotService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/EbookSnapshotServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/java/com/gec/_03_wiki/service/impl/EbookSnapshotServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_03_wiki/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_03_wiki/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/components/the-header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/components/the-header.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/views/admin/admin-user.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/admin/admin-user.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/views/doc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/views/doc.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,43 +87,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/_myProjects/yq/_03_wiki/src/main/java/com/gec/_03_wiki/websocket",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
-    "spring.configuration.checksum": "0fea3f4341ca81c50f8be949585dd9f5",
-    "ts.external.directory.path": "D:\\_myProjects\\yq\\web\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/_myProjects/yq/web/public/js&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;0fea3f4341ca81c50f8be949585dd9f5&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\_myProjects\\yq\\web\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\_myProjects\yq\web\public\js" />
+      <recent name="D:\_myProjects\yq\web\src\components" />
+      <recent name="D:\_myProjects\yq\_03_wiki\src\main\java\com\gec\_03_wiki\job" />
       <recent name="D:\_myProjects\yq\_03_wiki\src\main\java\com\gec\_03_wiki\websocket" />
       <recent name="D:\_myProjects\yq\_03_wiki\src\main\java\com\gec\_03_wiki\config" />
-      <recent name="D:\_myProjects\yq\_03_wiki\src\main\java\com\gec\_03_wiki\job" />
-      <recent name="D:\_myProjects\yq\_03_wiki\src\main\java\com\gec\_03_wiki\utils" />
-      <recent name="D:\_myProjects\yq\web\public\js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.gec._03_wiki.controller" />
@@ -142,27 +136,15 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application (2)">
+  <component name="RunManager" selected="npm.serve-dev">
     <configuration name="test | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/_03_wiki/http/test.http" index="4" requestIdentifier="#4" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="test | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/_03_wiki/http/test.http" index="5" requestIdentifier="#5" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="_03_wiki" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gec._03_wiki.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gec._03_wiki" />
-      <option name="MAIN_CLASS_NAME" value="com.gec._03_wiki.ApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="test | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/_03_wiki/http/test.http" index="6" requestIdentifier="#6" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="Application (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="_03_wiki" />
@@ -188,9 +170,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="HTTP Request.test | #6" />
       <item itemvalue="HTTP Request.test | #4" />
       <item itemvalue="HTTP Request.test | #5" />
-      <item itemvalue="JUnit.ApplicationTests" />
       <item itemvalue="npm.serve-dev" />
       <item itemvalue="Spring Boot.Application (2)" />
     </list>
@@ -198,9 +180,9 @@
       <list>
         <item itemvalue="npm.serve-dev" />
         <item itemvalue="Spring Boot.Application (2)" />
+        <item itemvalue="HTTP Request.test | #6" />
         <item itemvalue="HTTP Request.test | #5" />
         <item itemvalue="HTTP Request.test | #4" />
-        <item itemvalue="JUnit.ApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +226,10 @@
       <workItem from="1695001644371" duration="3137000" />
       <workItem from="1695088786918" duration="14345000" />
       <workItem from="1695172906619" duration="5911000" />
-      <workItem from="1695258524410" duration="6700000" />
+      <workItem from="1695258524410" duration="8057000" />
+      <workItem from="1695347712888" duration="10408000" />
+      <workItem from="1695431077638" duration="3460000" />
+      <workItem from="1695450565025" duration="902000" />
     </task>
     <task id="LOCAL-00001" summary="day01">
       <created>1693961437379</created>
@@ -344,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695104861325</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="day10文档信息">
+      <created>1695281202518</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1695281202518</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +397,8 @@
     <MESSAGE value="day08分类" />
     <MESSAGE value="day08文档" />
     <MESSAGE value="day09登录校验" />
-    <option name="LAST_COMMIT_MESSAGE" value="day09登录校验" />
+    <MESSAGE value="day10文档信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="day10文档信息" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

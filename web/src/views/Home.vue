@@ -32,7 +32,7 @@
 
         <a-layout-content :style="{ padding: '0 24px', minHeight: '280px' }">
           <div class="welcome" v-show="isShowWelcome">
-            <h1>欢迎使用海洋生物知识库</h1>
+            <the-welcome></the-welcome>
           </div>
           <a-list v-show="!isShowWelcome" item-layout="vertical" size="large" :grid="{gutter:20,column:3}" :data-source="ebooks">
 
@@ -80,6 +80,7 @@ import { defineComponent ,onMounted,ref,reactive,toRef} from 'vue';
 import axios from 'axios'
 import {message} from "ant-design-vue";
 import {Tool} from "@/utils/tool";
+import TheWelcome from "@/components/the-welcome.vue";
 
 
 //
@@ -98,9 +99,9 @@ import {Tool} from "@/utils/tool";
 
 export default defineComponent({
   name: 'HomeView',
-  // components: {
-  //
-  // },
+  components: {
+    TheWelcome
+  },
   setup(){
     console.log("setup");
     const  ebooks = ref();
